@@ -1,20 +1,26 @@
 body{
-    font-family: 'Caveat Brush', cursive;
+    font-family: 'Bangers', cursive;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Lemon', cursive;
+    background-color: #eee3dd;
+    color:#AECDAD;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #fff;
 }
 
 .card{
-    background-color:darkseagreen;
+    background-color:#EE999F;
     display:grid;
     width:40%;
     grid-template-columns: 90px auto 10px ;
     position: relative;
     margin-bottom:5%;
-    
+    border:solid lightgray 1px;
+    box-shadow: 10px 10px 10px #ee999f;
 }
 .content{
     margin:0 10%;
 }
-
 img{
     position:relative;
     border-radius:100%;
@@ -27,20 +33,25 @@ img{
 }
 .date{
     position:relative;
-    top:40%;
+    top:35%;
     grid-column: 2;
 }
 .what{
     position:relative;
+    top:-150%;
     grid-column: 2;
 }
 .where{
     position:relative;
+    top:-140%;
+
     grid-column: 2;
 }
 .text{
     position:relative;
     grid-column: 2;
+    top:-130%;
+
 }
 .date{
     position:relative;
