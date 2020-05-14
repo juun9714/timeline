@@ -8,7 +8,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bangers&family=Lemon&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>DAY6</h1>
+    <div id="title">
+        <h1>MEMBER OF  DAY6</h1> 
+    </div>
+    <div class="buttons">
+        <button class="change" onclick="
+        document.querySelector('body').style.backgroundImage='url(pil.jpg)'; 
+        document.querySelector('body').style.backgroundSize='cover';
+        ">김원필</button>
+        <button class="change" onclick="
+        document.querySelector('body').style.backgroundImage='url(k.jpg)'; 
+        document.querySelector('body').style.backgroundSize='cover';
+        ">영케이</button>
+    </div>
     <div class="content">
         <div class="line"></div>
         
@@ -58,7 +70,9 @@
         </div>
         
     </div>
-
+    <a href="#title"><button id="tothetop">
+        TOP
+    </button></a>
     
 </body>
 </html>
