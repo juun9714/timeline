@@ -7,33 +7,54 @@
 </head>
 
 <style>
+    body{
+        height:2000px;
+    }
     .box
     {
         width:100px;
         height:100px;
         margin:10px;
-        background-color: powderblue;
         display:inline-block;
+        position:static;
+    }
+    .a{
+        background-color: coral;
+    }
+    .b{
+        background-color:cornflowerblue;
+        position:relative;
+        top:30px;
+        left:50px;
+
+    }
+    .c{
+        background-color:indianred;
+        position:fixed; <!--fixed도 기준이 상위 태그 : c박스의 부모 태그는 body태그이기 때문에 픽셀조정시 body 기준으로 띄어지게 됨-->
+        right:10px;
+        bottom:10px;
+    }
+    .d{
+        background-color:khaki;
+    }
+    .e{
+        background-color:lightseagreen;
+    }
+    .f{
+        background-color:steelblue;
+        position: absolute;
+        top:20px;
+        right:40px;
     }
 </style>
 <body>
 
-    <div class="box">1</div>
-    <div class="box">2</div>
-    <div class="box">3</div>
-    <div class="box">4</div>
-    <div class="box">5</div>
-    <div class="box">6</div>
-
-    <span class="box">1</span>
-    <span class="box">2</span>
-    <span class="box">3</span>
-    <span class="box" style="visibility: hidden;">4</span>
-    <span class="box">5</span>
-    <span class="box">6</span>
-    <span class="box">ression</span>
-
-
+    <div class="box a">1</div>
+    <div class="box b">2</div>
+    <div class="box c">3</div>
+    <div class="box d">4</div>
+    <div class="box e">5</div>
+    <div class="box f">6</div>
     
 </body>
 </html>
