@@ -1,0 +1,93 @@
+body{
+    font-family: 'Caveat Brush', cursive;
+}
+
+.card{
+    background-color:darkseagreen;
+    display:grid;
+    width:40%;
+    grid-template-columns: 90px auto 10px ;
+    position: relative;
+    margin-bottom:5%;
+    
+}
+.content{
+    margin:0 10%;
+}
+
+img{
+    position:relative;
+    border-radius:100%;
+    border:solid 1.5px white;
+    border-style:double;
+    width:80px;
+    height:80px;
+    top:-20%;
+    left:-20%;
+}
+.date{
+    position:relative;
+    top:40%;
+    grid-column: 2;
+}
+.what{
+    position:relative;
+    grid-column: 2;
+}
+.where{
+    position:relative;
+    grid-column: 2;
+}
+.text{
+    position:relative;
+    grid-column: 2;
+}
+.date{
+    position:relative;
+    grid-column: 2;
+}
+.dot{
+    width:20px;
+    height:20px;
+    border-radius: 100%;
+    background-color:black;
+    position:absolute;
+    right:-27.55%;   
+    top:40%;
+}
+.line{
+    width:5px;
+    height:150%;
+    background-color: black;
+    position: absolute; 
+    top:10%;
+    left:50%;
+    margin-left:-2.5px;
+}
+.card:nth-child(even){
+    margin-left:60%;
+}
+
+.card:nth-child(even) .dot{
+    left:-27.4%
+}
+
+h1{
+    text-align:center;
+}
+@media(max-width:1000px)
+{
+    .dot, .line{
+        display:none;
+    }
+
+    .card{
+        width:80%;
+        margin-left:10%;
+    }
+    .card:nth-child(even){
+        width:80%;
+        margin-left:10%;
+    }
+}
+    
